@@ -4,6 +4,7 @@ A simple preprocessor for the WebGpu Shading Language.
 
 ## Why?
 
+I needed a preprocessor for some libraries I'm making but found that
 `wgsl` will not get an official preprocessor, at least not until 1.0. There are
 other options like `wgsl_preprocessor` and `bevy`'s preprocessor, but 
 `wgsl_preprocessor` does not have support for conditional code, and `bevy`'s
