@@ -3,6 +3,7 @@ A simple preprocessor for the WebGpu Shading Language.
 
 - [`wgsl_plus`](#wgsl_plus)
   - [Why?](#why)
+  - [Features](#features)
   - [Usage](#usage)
   - [Syntax](#syntax)
     - [Conditional code](#conditional-code)
@@ -19,6 +20,23 @@ I needed a preprocessor for some libraries I'm making but found that
 other options like `wgsl_preprocessor` and `bevy`'s preprocessor, but 
 `wgsl_preprocessor` does not have support for conditional code, and `bevy`'s
 preprocessor isn't available as a seperate package.
+
+## Features
+
+- Zero dependencies (< 1s compile time on M1 mac)
+- Advanced expressions in preprocessor directives:
+  - Math and comparisons
+    > ```rs
+    > //:if (1.0 - size * 5.0) / 10.0 > 26.0
+    > //:if width != height || height > 500
+    > ```
+  - Bit operations
+    > ```rs
+    > //:if BIT_FLAGS & BIT_3
+    > //:if BIT_FLAGS & 0b1000
+    > ``````
+- Preprocessor directives are comments, they will not mess
+  up your editor's highlighting
 
 ## Usage
 
