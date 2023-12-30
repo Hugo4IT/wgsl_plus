@@ -6,11 +6,11 @@ A simple preprocessor for the WebGpu Shading Language.
   - [Usage](#usage)
   - [Syntax](#syntax)
     - [Conditional code](#conditional-code)
-        - [Example:](#example)
+        - [Example](#example)
     - [Constants](#constants)
-        - [Example:](#example-1)
+        - [Example](#example-1)
     - [Include](#include)
-        - [Example:](#example-2)
+        - [Example](#example-2)
 
 ## Why?
 
@@ -75,7 +75,7 @@ workspace.set_global_bool("DO_STUFF", false);
 
 Include or exclude a piece of code if a certain condition is true.
 
-##### Example:
+##### Example
 
 Shader code
 
@@ -122,7 +122,7 @@ fn calculate_lighting(idx: u32) -> vec3<f32> {
 
 Insert a variable into the shader as a constant.
 
-##### Example:
+##### Example
 
 Shader code:
 
@@ -154,7 +154,7 @@ const SAMPLE_SIZE = 64;
 Include a file into this shader (path is relative to the
 workspace root).
 
-##### Example:
+##### Example
 
 Shader code (`main.wgsl`):
 
