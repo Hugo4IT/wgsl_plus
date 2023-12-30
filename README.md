@@ -97,7 +97,6 @@ Rust code:
 
 ```rs
 workspace.set_global_f64("quality", 5.0);
-workspace.get_shader("my-shader.wgsl").unwrap();
 ```
 
 Resulting shader:
@@ -134,7 +133,6 @@ Rust code
 
 ```rs
 workspace.set_global_i64("SAMPLE_SIZE", 64);
-workspace.get_shader("my-shader.wgsl").unwrap();
 ```
 
 Resulting shader:
