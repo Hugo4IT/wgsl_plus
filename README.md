@@ -1,6 +1,16 @@
 # `wgsl_plus`
-
 A simple preprocessor for the WebGpu Shading Language.
+
+- [`wgsl_plus`](#wgsl_plus)
+  - [Why?](#why)
+  - [Usage](#usage)
+  - [Syntax](#syntax)
+    - [Conditional code](#conditional-code)
+        - [Example:](#example)
+    - [Constants](#constants)
+        - [Example:](#example-1)
+    - [Include](#include)
+        - [Example:](#example-2)
 
 ## Why?
 
