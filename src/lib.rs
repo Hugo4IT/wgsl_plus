@@ -259,6 +259,7 @@ impl Default for WgslWorkspaceState {
     }
 }
 
+#[derive(Debug)]
 pub struct WgslWorkspace {
     state: WgslWorkspaceState,
     root: PathBuf,
