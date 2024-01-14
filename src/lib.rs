@@ -252,6 +252,8 @@ impl Default for WgslWorkspaceState {
             global_variables.insert(format!("BIT_{i}"), WgslLiteral::Integer(1 << i));
         }
 
+        global_variables.insert("PI".into(), WgslLiteral::Float(core::f64::consts::PI));
+
         Self {
             global_variables,
             local_overrides,
@@ -259,6 +261,7 @@ impl Default for WgslWorkspaceState {
     }
 }
 
+#[derive(Debug)]
 pub struct WgslWorkspace {
     state: WgslWorkspaceState,
     root: PathBuf,
