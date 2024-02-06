@@ -212,7 +212,6 @@ impl WgslExpression {
     }
 
     fn reorder(&mut self) {
-        return;
         // TODO
 
         // match self {

@@ -270,7 +270,7 @@ pub struct WgslWorkspace {
 
 impl WgslWorkspace {
     pub fn scan(root: impl Into<PathBuf>) -> Self {
-        let mut shaders = HashMap::new();
+        let shaders = HashMap::new();
 
         Self {
             state: WgslWorkspaceState::default(),
